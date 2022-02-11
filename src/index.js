@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 
 function App() {
-  const fetch = require('node-fetch');
+  //const fetch = require('node-fetch');
 const express = require('express');
 const app = express();
 app.get('/', (req, res) => {
