@@ -4,9 +4,15 @@ import ReactDOM from 'react-dom'
 
 function App() {
   const fetch = require('node-fetch');
-  fetch('https://google.com')
-    .then(res => res.text())
-    .then(text => console.log(text));
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+    res.send('Welcome to CORS server 😁')
+})
+app.get('/cors', (req, res) => {
+    res.send('This has CORS enabled 🎈')
+})
+  
   return <h1>..</h1>
 }
 
